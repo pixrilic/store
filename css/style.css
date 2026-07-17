@@ -1,68 +1,38 @@
-/* ===== Navbar ===== */
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    text-align:center;
+}
 
-.navbar{
-    position:sticky;
-    top:0;
-    z-index:999;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 25px;
+header{
     background:#111;
-    color:#fff;
+    color:white;
+    padding:20px;
+}
+
+.card{
+    width:300px;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:20px;
     box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
-.nav-left{
-    display:flex;
-    align-items:center;
-    gap:15px;
+img{
+    width:100%;
+    border-radius:15px;
 }
 
-.logo{
-    color:#fff;
-    text-decoration:none;
-    font-size:22px;
-    font-weight:bold;
-}
-
-.menu-btn{
-    background:none;
+button{
+    background:#111;
+    color:white;
     border:none;
-    color:#fff;
-    font-size:24px;
+    padding:12px 25px;
+    border-radius:12px;
     cursor:pointer;
-}
-
-.search-box input{
-    width:320px;
-    max-width:100%;
-    padding:10px 15px;
-    border:none;
-    border-radius:25px;
-    outline:none;
-}
-
-.nav-right{
-    display:flex;
-    gap:20px;
-}
-
-.nav-right a{
-    color:#fff;
-    text-decoration:none;
-    transition:.25s;
-}
-
-.nav-right a:hover{
-    opacity:.7;
-}
-
-@media(max-width:768px){
-
-.search-box{
-    display:none;
-}
+}}
 
 .nav-right{
     display:none;
